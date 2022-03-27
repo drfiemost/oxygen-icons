@@ -2,7 +2,8 @@ project(oxygen-icons NONE)
 set(PROJECT_VERSION "5.4.90")
 set(PROJECT_VERSION_MAJOR 5)
 
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.12)
+
 # include specific modules
 set (CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
