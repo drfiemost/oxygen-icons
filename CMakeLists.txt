@@ -1,8 +1,8 @@
+cmake_minimum_required(VERSION 3.12)
 project(oxygen-icons NONE)
+
 set(PROJECT_VERSION "5.4.90")
 set(PROJECT_VERSION_MAJOR 5)
-
-cmake_minimum_required(VERSION 2.8.12)
 
 # include specific modules
 set (CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
@@ -32,8 +32,7 @@ macro (COPY_ICONS _srcdir _srcfile _destdir)
 endmacro (COPY_ICONS)
 
 # Copy the msoffice icon to the msoffice-2007 mimetypes (#225507)
-foreach(_sizedir ${oxygen_icon_dirs})
-
+#foreach(_sizedir ${oxygen_icon_dirs})
 #  template/example
 #  COPY_ICONS( 
 #    ${_sizedir}/mimetypes
@@ -41,6 +40,5 @@ foreach(_sizedir ${oxygen_icon_dirs})
 #    ${OXYGEN_INSTALL_DIR}
 #    application-vnd.openxmlformats-officedocument.wordprocessingml.template.png
 #    application-vnd.ms-word.template.macroEnabled.12.png)
-
-endforeach()
+#endforeach()
 
